@@ -7,6 +7,7 @@ const weather = require('./weather-api/weather');
 
 
 const app = express();
+const port = process.env.PORT || 5000;
 const staticDirectory = path.join(__dirname, '../public');
 app.use(express.static(staticDirectory));
 
@@ -69,6 +70,6 @@ app.get('*', (req, res) => {
     res.render('page-not-found')
 })
 
-app.listen(5000, () => {
-    console.log('Server is running');
+app.listen(port, () => {
+    console.log('Server is running on', port);
 })
