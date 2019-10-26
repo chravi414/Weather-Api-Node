@@ -1,0 +1,20 @@
+body {
+    margin : 0 auto;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:grey;
+   color: white;
+   text-align: center;
+}
+
+p{
+    padding-top:5px;
+}
+
+.error-template {padding: 40px 15px;text-align: center;}
+.error-actions {margin-top:15px;margin-bottom:15px;}
+.error-actions .btn { margin-right:10px; }
